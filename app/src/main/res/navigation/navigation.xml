@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/navigation"
+            app:startDestination="@id/awalFragment2">
+    <fragment android:id="@+id/awalFragment2" android:name="org.d3if4115.myapplication.AwalFragment"
+              android:label="fragment_awal" tools:layout="@layout/fragment_awal">
+        <action android:id="@+id/action_awalFragment2_to_segitigaFragment2" app:destination="@id/segitigaFragment"
+                app:popUpTo="@+id/segitigaFragment"/>
+        <action android:id="@+id/action_awalFragment2_to_PPFragment" app:destination="@id/PPFragment"
+                app:popUpTo="@+id/PPFragment"/>
+        <action android:id="@+id/action_awalFragment2_to_aboutFragment2" app:destination="@id/aboutFragment2"/>
+    </fragment>
+    <fragment android:id="@+id/aboutFragment2" android:name="org.d3if4115.myapplication.AboutFragment"
+              android:label="fragment_about" tools:layout="@layout/fragment_about"/>
+    <fragment android:id="@+id/segitigaFragment" android:name="org.d3if4115.myapplication.SegitigaFragment"
+              android:label="fragment_segitiga" tools:layout="@layout/fragment_segitiga"/>
+    <fragment android:id="@+id/PPFragment" android:name="org.d3if4115.myapplication.PPFragment"
+              android:label="fragment_p" tools:layout="@layout/fragment_p"/>
+</navigation>
